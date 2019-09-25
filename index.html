@@ -9,12 +9,40 @@
 			margin: 0;
 			background: #010101;
 		}
+
+		.bend {
+			animation: animasiSatu ease 2s infinite;
+		}
+
+		@keyframes animasiSatu {
+			5% {
+				text-shadow: none;
+			}
+
+			95% {
+				text-shadow: 0px 0px 2px dodgerblue,
+							 0px 0px 4px dodgerblue,
+							 0px 0px 8px dodgerblue,
+							 0px 0px 12px dodgerblue,
+							 0px 0px 16px dodgerblue,
+							 0px 0px 24px dodgerblue,
+							 0px 0px 28px dodgerblue,
+							 0px 0px 32px dodgerblue,
+							 0px 0px 36px dodgerblue;
+			}
+		}
 	</style>
 </head>
 <body>
 
 <div class="container">
-	<h1 class="text-center text-light mt-5">Drum Bend</h1>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8 title">
+			<h1 class="text-center text-light mt-5 bend">Drum Bend</h1>	
+		</div>
+		<div class="col-md-2"></div>
+	</div>	
 	<div class="row mt-5">
 		<div class="col-md-6 text-right">
 			<button class="btn btn-lg btn-primary" id="clap">Tekan Q = Clap</button>
